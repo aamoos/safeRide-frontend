@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>	
+  <v-app> <!-- Vuetify의 전체 레이아웃을 감싸줌 -->
+    <router-view /> 
+  </v-app>
 </template>
 
 <script>

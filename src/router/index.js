@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginPage from '../components/views/LoginPage.vue'
+import FcmPage from '../components/views/FcmPage.vue'
 import MainPage from '../components/views/MainPage.vue'
 
 const routes = [
@@ -9,7 +10,17 @@ const routes = [
         component: LoginPage
     },
     {
-        path: '/min',
+        path: '/fcm',
+        name: 'FcmPage',
+        component: FcmPage
+    },
+    {
+        path: '/fcm',
+        name: 'FcmPage',
+        component: FcmPage
+    },
+    {
+        path: '/main',
         name: 'MainPage',
         component: MainPage,
         meta: { requiresAuth: true }
