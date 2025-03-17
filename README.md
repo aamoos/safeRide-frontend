@@ -35,7 +35,8 @@
 ## 🛠️ 기술 스택
 - **Frontend**: Vue 3, Vuetify  
 - **Backend**: Spring Boot, Spring Security, Spring Data JPA, JWT, Gradle  
-- **Database**: PostgreSQL  
+- **Database**: PostgreSQL
+- **Native**: Android (Java)
 - **Deployment**: Vercel (Frontend), Render (Backend)  
 
 ## 📌 주요 기능
