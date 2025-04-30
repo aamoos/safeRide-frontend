@@ -46,7 +46,7 @@
 
 ## 📸 스크린샷
 - 로그인
-- ![image](https://github.com/user-attachments/assets/ebbbbd3e-2faa-4e07-9887-1b24f66f6c59)
+![image](https://github.com/user-attachments/assets/ebbbbd3e-2faa-4e07-9887-1b24f66f6c59)
 
 - 메인화면
 ![image](https://github.com/user-attachments/assets/b3693567-9e57-49a4-b9cb-2b74b2e761e5)
