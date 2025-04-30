@@ -45,4 +45,15 @@
 ✅ **(기능 3)** - 출결 관리 기능
 
 ## 📸 스크린샷
-(스크린샷 이미지 추가)
+- 로그인
+- ![image](https://github.com/user-attachments/assets/ebbbbd3e-2faa-4e07-9887-1b24f66f6c59)
+
+- 메인화면
+![image](https://github.com/user-attachments/assets/b3693567-9e57-49a4-b9cb-2b74b2e761e5)
+
+- 내위치
+![image](https://github.com/user-attachments/assets/0deffcbc-ebf0-4cd5-b0d8-48f7bd4fb5e3)
+
+
+
+
