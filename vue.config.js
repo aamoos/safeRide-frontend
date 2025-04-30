@@ -1,4 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
+
 module.exports = defineConfig({
   devServer: {
     port: 3000,  // Vue 개발 서버 포트 설정

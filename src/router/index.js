@@ -2,29 +2,46 @@ import { createRouter, createWebHistory } from 'vue-router';
 import LoginPage from '../components/views/LoginPage.vue'
 import FcmPage from '../components/views/FcmPage.vue'
 import MainPage from '../components/views/MainPage.vue'
+import Oauth2Redirect from "../components/views/Oauth2Redirect.vue";
+import SettingPage from '../components/views/SettingPage.vue'
+import UserJoinPage from '../components/views/UserJoinPage.vue'
 
 const routes = [
     {
         path: '/login',
-        name: 'LoginPage',
+        name: 'login',
         component: LoginPage
     },
     {
         path: '/fcm',
-        name: 'FcmPage',
-        component: FcmPage
-    },
-    {
-        path: '/fcm',
-        name: 'FcmPage',
+        name: 'fcm',
         component: FcmPage
     },
     {
         path: '/main',
-        name: 'MainPage',
+        name: 'main',
         component: MainPage,
         meta: { requiresAuth: true }
     },
+    {
+        path: '/settings',
+        name: 'settings',
+        component: SettingPage,
+        meta: { requiresAuth: true }
+    },
+    {
+        path: '/join',
+        name: 'join',
+        component: UserJoinPage,
+        meta: { requiresAuth: true }
+    },
+    // oauth2 redirect page
+    {
+        path: '/oauth2/redirect',
+        name: "oauth2-redirect",
+        component: Oauth2Redirect,
+        meta: { requiresAuth: false },
+    }
     // 다른 라우터 추가
 ];
 
@@ -43,7 +60,7 @@ router.beforeEach((to, from, next) => {
 
     // If the route requires authentication and there's no token, redirect to home
     if (to.matched.some(record => record.meta.requiresAuth) && !isAuthenticated) {
-        next('/');
+        next('/login');
     } else {
         next();
     }
